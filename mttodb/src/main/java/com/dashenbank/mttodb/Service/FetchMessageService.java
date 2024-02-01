@@ -14,12 +14,12 @@ public class FetchMessageService {
 
 
      public FetchMessageService(WebClient.Builder webClientBuilder) {
-        this.webclient = webClientBuilder.baseUrl("http://192.168.12.47:9998").build();
+        this.webclient = webClientBuilder.baseUrl("http://192.168.12.##:####").build();
     }
 
     public List<MessageResponse> getMessageInfo() {
 
-        String GET_EMPLOYEE_BY_ID = "http://192.168.12.47:9998/getall/";
+        String GET_EMPLOYEE_BY_ID = "http://192.168.12.##:###/getall/";
 
         System.out.println(GET_EMPLOYEE_BY_ID);
 
@@ -42,7 +42,7 @@ public class FetchMessageService {
 
                 MessageResponse model = webclient.get()
 
-                .uri("http://192.168.12.47:9998/getByRefference/" + referenceNumber)
+                .uri("http://192.168.12.##:####/getByRefference/" + referenceNumber)
 
                 .retrieve()
 
