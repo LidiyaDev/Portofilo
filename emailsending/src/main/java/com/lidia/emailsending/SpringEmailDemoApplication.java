@@ -20,7 +20,7 @@ public class SpringEmailDemoApplication {
 	}
 	@EventListener(ApplicationReadyEvent.class)
 	public void triggerMail() throws MessagingException {
-		senderService.sendSimpleEmail("lidupaypal@gmail.com",
+		senderService.sendSimpleEmail("lidup@gmail.com",
 				"Test",
 				"Testting Spring Boot For Email Sending");
 
