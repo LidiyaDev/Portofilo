@@ -20,7 +20,7 @@ public class EmailSenderService {
                                 String body
     ) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("lidia4git@gmail.com");
+        message.setFrom("lidia@gmail.com");
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(subject);
